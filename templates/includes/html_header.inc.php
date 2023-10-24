@@ -1,3 +1,4 @@
+<?php fromInc("menu"); ?>
 <!doctype html>
 <html lang="fr">
 <head>
