@@ -56,27 +56,24 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <link rel="stylesheet" href="./styles/global.css">
 </head>
 <body>
-    <form action="#" method="post">
+    <form action="#" method="post" class="formulaire">
         <input type="hidden" name="id" value="<?= $id ?>">
-        <ul>
+        <ul class="info_form">
             <li>
-                <label for="name">Nom&nbsp;:</label>
                 <input type="text" id="name" name="name" value="<?= $record['name'] ?>" />
             </li>
             <li>
-                <label for="surname">Prénom&nbsp;:</label>
                 <input type="text" id="surname" name="surname" value="<?= $record['surname'] ?>" />
             </li>
             <li>
-                <label for="email">Email&nbsp;:</label>
                 <input type="text" id="email" name="email" value="<?= $record['email'] ?>" />
             </li>
             <li>
-                <label for="tel">Téléphone&nbsp;:</label>
+            
                 <input type="text" id="tel" name="tel" value="<?= $record['tel'] ?>" />
             </li>
         </ul>
-        <input type="submit" value="Mettre à jour">
+        <input type="submit" class="boutton" value="Mettre à jour">
     </form>
 </body>
 </html>

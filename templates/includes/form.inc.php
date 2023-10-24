@@ -2,26 +2,22 @@
 require './src/dbConnect.php';
 require './configs/global.php';
 ?>
-<form action="#" method="post">
-  <ul>
+<form action="#" method="post" class="formulaire">
+  <ul class="info_form">
     <li>
-      <label for="name">Nom&nbsp;:</label>
-      <input type="text" id="name" name="name" />
+      <input type="text" id="name" name="name" placeholder="name" />
     </li>
     <li>
-      <label for="surname">prenom&nbsp;:</label>
-      <input type="text" id="surname" name="surname" />
+      <input type="text" id="surname" name="surname" placeholder="surname"/>
     </li>
     <li>
-      <label for="email">email&nbsp;:</label>
-      <input type="text" id="email" name="email" />
+      <input type="text" id="email" name="email" placeholder="email"/>
     </li>
     <li>
-      <label for="tel">tel&nbsp;:</label>
-      <input type="text" id="tel" name="tel" />
+      <input type="text" id="tel" name="tel" placeholder="téléphone"/>
     </li>
   </ul>
-   <input type="submit">
+   <input type="submit" class="boutton">
 </form>
 
 <?php 

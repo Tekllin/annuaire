@@ -2,20 +2,12 @@
 require './src/dbConnect.php';
 require './configs/global.php';
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/global.css">
-</head>
-<body>
-    <label for="search">Rechercher</label>
-    <input type="text" name="search" id="search">
+    
+    
+    
 
     <ul class="liste_annuaire">
+        <li><input type="text" name="search" id="search" placeholder="Rechercher"></li>
         <li class="li_annuaire">
             <h4 class="element_tableau"><p>Nom</p></h4>
             <h4 class="element_tableau"><p>Prenom</p></h4>
@@ -68,5 +60,4 @@ require './configs/global.php';
             searchInput.addEventListener("input", performSearch);
         });
     </script>
-</body>
-</html>
+
